@@ -1,4 +1,7 @@
 export default {
+  tailwindcss:{
+    configPath: 'tailwind.config.js',
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
