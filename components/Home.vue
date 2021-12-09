@@ -22,23 +22,25 @@
           class="hidden md:block absolute border-b opacity-40 border-gray-100 w-1/3 left-72"
         ></div>
         <div
-          class="hidden md:block bg-white text-center  xl:px-32 uppercase bg-opacity-5 text-white backdrop-filter backdrop-blur-xl"
+          class="hidden md:block bg-white text-center xl:px-32 uppercase bg-opacity-5 text-white backdrop-filter backdrop-blur-xl"
         >
-          <div class="flex text-center pr-20 space-x-10 lg:space-x-20 pl-7 tracking-wide">
+          <div
+            class="flex text-center pr-20 space-x-10 lg:space-x-20 pl-7 tracking-wide"
+          >
             <div class="border-b-4 border-white py-8">
               <a href="#">
-                <div class="space-x-1">
+                <NuxtLink class="space-x-1" to="/">
                   <span class="font-bold">00</span>
                   <span> home</span>
-                </div>
+                </NuxtLink>
               </a>
             </div>
             <div class="py-8">
               <a href="#">
-                <div class="space-x-1">
+                <NuxtLink class="space-x-1" to="/destination">
                   <span class="font-bold">01</span>
                   <span> destination</span>
-                </div>
+                </NuxtLink>
               </a>
             </div>
             <div class="py-8">
@@ -63,8 +65,10 @@
       <!-- home page content -->
 
       <div class="pt-10 md:pt-32 xl:pt-72">
-        <div class="flex flex-col lg:flex-row text-center lg:text-justify text-white justify-around items-center">
-          <div class=" space-y-2 lg:space-y-4 lg:space-y-7">
+        <div
+          class="flex flex-col lg:flex-row text-center lg:text-justify text-white justify-around items-center"
+        >
+          <div class="space-y-2 lg:space-y-4 lg:space-y-7">
             <div class="uppercase text-2xl">so, you want to travel to</div>
             <div class="uppercase text-9xl">space</div>
             <div class="max-w-md">
@@ -76,7 +80,7 @@
           </div>
           <div class="mt-20">
             <div
-              class="uppercase lg:text-3xl text-black bg-white px-7 py-12   lg:px-12  lg:py-24 rounded-full"
+              class="uppercase lg:text-3xl text-black bg-white px-7 py-12 lg:px-12 lg:py-24 rounded-full"
             >
               Explore
             </div>
