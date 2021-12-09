@@ -29,7 +29,7 @@
           >
             <div class="py-8">
               <a href="#">
-                 <NuxtLink class="space-x-1" to="/">
+                <NuxtLink class="space-x-1" to="/">
                   <span class="font-bold">00</span>
                   <span> home</span>
                 </NuxtLink>
@@ -45,18 +45,18 @@
             </div>
             <div class="py-8">
               <a href="#">
-                <div class="space-x-1">
+                <NuxtLink class="space-x-1" to="/crew">
                   <span class="font-bold">02</span>
                   <span> crew</span>
-                </div>
+                </NuxtLink>
               </a>
             </div>
             <div class="py-8">
               <a href="#">
-                <div class="space-x-1">
+                <NuxtLink class="space-x-1" to="/technology">
                   <span class="font-bold">03</span>
                   <span> technology</span>
-                </div>
+                </NuxtLink>
               </a>
             </div>
           </div>
@@ -81,7 +81,9 @@
             <div class="">
               <div class="flex flex-col pt-14 space-y-7">
                 <div class="text-center uppercase text-white">
-                  <div class="flex text-center text-gray-400 space-x-8 tracking-widest">
+                  <div
+                    class="flex text-center text-gray-400 space-x-8 tracking-widest"
+                  >
                     <div class="py-2">
                       <a href="#">
                         <div class="space-x-1">
@@ -116,11 +118,10 @@
                   <div class="uppercase text-8xl">mars</div>
                   <div class="flex flex-col divide-y space-y-14">
                     <div class="max-w-md text-gray-400">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Fugit commodi provident vitae nemo labore dolore, atque
-                      eius error soluta numquam sequi voluptatibus laborum
-                      repudiandae? Praesentium cupiditate quae velit quia
-                      itaque?
+                      Don't forget to pack your hiking boots. You'll need them
+                      to tackle Olympus Mons, the tallest planetaryplanetary mountain in
+                      our solar system, It's two and a halt times the size of
+                      Everest!
                     </div>
                     <div class="flex space-x-16 uppercase py-4">
                       <div class="flex flex-col">
@@ -141,9 +142,9 @@
                           <span>time</span>
                         </div>
                         <div class="space-x-1 text-2xl">
-                            <span>9</span>
-                            <span>months</span>
-                            </div>
+                          <span>9</span>
+                          <span>months</span>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -3,7 +3,7 @@
     <div
       class="h-screen w-full bg-bottom bg-cover bg-no-repeat"
       :style="{
-        backgroundImage: `url(images/home/background-home-desktop.jpg)`,
+        backgroundImage: `url(images/crew/background-crew-desktop.jpg)`,
       }"
     >
       <div class="relative flex justify-between pt-20 items-center">
@@ -27,7 +27,7 @@
           <div
             class="flex text-center pr-20 space-x-10 lg:space-x-20 pl-7 tracking-wide"
           >
-            <div class="border-b-4 border-white py-8">
+            <div class="py-8">
               <a href="#">
                 <NuxtLink class="space-x-1" to="/">
                   <span class="font-bold">00</span>
@@ -43,7 +43,7 @@
                 </NuxtLink>
               </a>
             </div>
-            <div class="py-8">
+            <div class="border-b-4 border-white py-8">
               <a href="#">
                 <NuxtLink class="space-x-1" to="/crew">
                   <span class="font-bold">02</span>
@@ -62,27 +62,51 @@
           </div>
         </div>
       </div>
-      <!-- home page content -->
+      <!-- destination page content -->
 
-      <div class="pt-10 md:pt-32 xl:pt-72">
+      <div class="pt-10 md:pt-14 xl:pt-20">
         <div
-          class="flex flex-col lg:flex-row text-center lg:text-justify text-white justify-around items-center"
+          class="flex flex-col lg:flex-row text-center lg:text-justify text-white justify-center"
         >
-          <div class="space-y-2 lg:space-y-4 lg:space-y-7">
-            <div class="uppercase text-2xl tracking-widest">so, you want to travel to</div>
-            <div class="uppercase text-9xl">space</div>
-            <div class="max-w-md">
-              Let's face it; if you want to go to space, you might as well
-              genuinely go to outer space and not hover kind of on the edge of
-              it. Well sit back, and relax because we'll give you a truly out of
-              this world experience!
+          <div class="mt-6 px-32">
+            <div class="uppercase text-2xl space-x-4 tracking-widest">
+              <span class="text-gray-400">02</span
+              ><span class="uppercase">meet your crew</span>
+            </div>
+            <div class="mt-20">
+              <div class="flex flex-col pt-14 space-y-7">
+                <div class="flex flex-col space-y-6">
+                  <div class="uppercase text-4xl text-gray-400">
+                    flight engineer
+                  </div>
+                  <div class="uppercase text-6xl">anousheh ansari</div>
+                  <div class="flex flex-col space-y-14">
+                    <div class="max-w-md text-gray-400">
+                      Anousheh Ansari is an Iranian American engineer and co-
+                      founder of Prodea Systems. Ansari was the fourth self
+                      funded space tourist, the first self-funded woman to fiv
+                      to the ISS, and the first Iranian in space.
+                    </div>
+                    <div class="py-4">
+                      <div class="flex space-x-7">
+                        <div class="h-3 w-3 rounded-full bg-gray-500"></div>
+                        <div class="h-3 w-3 rounded-full bg-gray-500"></div>
+                        <div class="h-3 w-3 rounded-full bg-gray-500"></div>
+                        <div class="h-3 w-3 rounded-full bg-white"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="mt-20">
-            <div
-              class="uppercase lg:text-3xl text-black bg-white px-7 py-12 lg:px-12 lg:py-24 rounded-full"
-            >
-              Explore
+          <div class="space-y-2 lg:space-y-4 lg:space-y-7 px-20">
+            <div class="pt-16">
+              <img
+                src="images/crew/image-anousheh-ansari.png"
+                alt=""
+                srcset=""
+              />
             </div>
           </div>
         </div>
