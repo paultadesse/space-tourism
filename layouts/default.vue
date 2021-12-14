@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="absolute w-full">
-      <div class="relative z-10 flex justify-between pt-4 xl:pt-20 items-center">
-        <div class="ml-4 xl:ml-20">
+      <div class="relative z-10 flex justify-between  xl:pt-20">
+        <div class="p-4  xl:ml-20">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
             <g fill="none" fill-rule="evenodd">
               <circle cx="24" cy="24" r="24" fill="#FFF" />
@@ -16,6 +16,75 @@
         <div
           class="hidden md:block absolute border-b opacity-40 border-gray-100 w-1/3 left-72"
         ></div>
+        <div class="xl:hidden">
+          <div :class="navOpen ? '' : 'mt-7 mr-4'">
+            <div
+              :class="navOpen ? 'hidden' : 'block'"
+              @click="navOpen = !navOpen"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+                <g fill="#D0D6F9" fill-rule="evenodd">
+                  <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+                </g>
+              </svg>
+            </div>
+
+            <div
+              :class="
+                !navOpen
+                  ? 'hidden'
+                  : 'bg-white text-center xl:px-32 h-screen uppercase bg-opacity-5 text-white backdrop-filter backdrop-blur-xl'
+              "
+              @click="navOpen = !navOpen"
+            >
+              <div class="absolute h-screen top-7 right-4">
+                <div class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="21"
+                  >
+                    <g fill="#D0D6F9" fill-rule="evenodd">
+                      <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+                      <path
+                        d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col items-start p-20 xl:space-x-10 xl:space-x-20 pl-7 tracking-wide"
+              >
+                <NuxtLink class="py-4 xl:py-8" to="/">
+                  <div class="space-x-1">
+                    <span class="font-bold">00</span>
+                    <span> home</span>
+                  </div>
+                </NuxtLink>
+                <NuxtLink class="py-4 xl:py-8" to="/destination">
+                  <div class="space-x-1">
+                    <span class="font-bold">01</span>
+                    <span> destination</span>
+                  </div>
+                </NuxtLink>
+                <NuxtLink class="py-4 xl:py-8" to="/crew">
+                  <div class="space-x-1">
+                    <span class="font-bold">02</span>
+                    <span> crew</span>
+                  </div>
+                </NuxtLink>
+                <NuxtLink class="py-4 xl:py-8" to="/technology">
+                  <div class="space-x-1">
+                    <span class="font-bold">03</span>
+                    <span> technology</span>
+                  </div>
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+        </div>
         <div
           class="hidden md:block bg-white text-center xl:px-32 uppercase bg-opacity-5 text-white backdrop-filter backdrop-blur-xl"
         >
@@ -58,5 +127,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      navOpen: false,
+    }
+  },
+}
 </script>
