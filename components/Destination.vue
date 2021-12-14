@@ -7,27 +7,36 @@
         alt=""
         srcset=""
       />
+
+      <!-- displayed on mobile devices -->
+      <img
+        class="xl:hidden absolute h-screen w-full bg-bottom bg-cover bg-no-repeat"
+        src="images/destination/background-destination-mobile.jpg"
+        alt=""
+        srcset=""
+      />
+
       <!-- destination page content -->
 
-      <div class="relative xl:top-40 md:pt-14 xl:pt-28">
+      <div class="relative top-24 xl:top-40 md:pt-14 xl:pt-28">
         <div
-          class="flex flex-col lg:flex-row text-center lg:text-justify text-white justify-center"
+          class="flex flex-col xl:flex-row text-center xl:text-justify text-white justify-center"
         >
-          <div class="space-y-2 lg:space-y-4 lg:space-y-7 px-20">
-            <div class="uppercase text-2xl space-x-4 tracking-widest">
+          <div class="space-y-2 xl:space-y-4 xl:space-y-7 px-20">
+            <div class="uppercase xl:text-2xl xl:space-x-4 tracking-widest">
               <span class="text-gray-400">01</span
               ><span class="uppercase">pick your destination</span>
             </div>
-            <div class="pt-16">
+            <div class="pt-4 xl:pt-16">
               <img :src="activeTabData.imagePath" alt="" srcset="" />
             </div>
           </div>
-          <div class="mt-6 px-32">
+          <div class="mt-6 xl:px-32">
             <div class="">
-              <div class="flex flex-col pt-14 space-y-7">
+              <div class="flex flex-col xl:pt-14 space-y-7">
                 <div class="text-center uppercase text-white">
                   <div
-                    class="flex text-center text-gray-400 space-x-8 tracking-widest"
+                    class="flex text-center justify-center xl:justify-start text-gray-400 space-x-8 tracking-widest"
                   >
                     <div
                       v-for="(tab, index) in tabs"
@@ -50,13 +59,19 @@
                     </div>
                   </div>
                 </div>
-                <div class="flex flex-col space-y-7">
-                  <div class="uppercase text-8xl">{{ activeTabData.name }}</div>
-                  <div class="flex flex-col divide-y space-y-14">
-                    <div class="max-w-md text-gray-400">
+                <div
+                  class="flex flex-col items-center xl:items-start space-y-3 xl:space-y-7"
+                >
+                  <div class="uppercase text-4xl xl:text-8xl">
+                    {{ activeTabData.name }}
+                  </div>
+                  <div class="flex flex-col divide-y xl:space-y-14">
+                    <div class="max-w-md p-4 text-gray-400">
                       {{ activeTabData.content }}
                     </div>
-                    <div class="flex space-x-16 uppercase py-4">
+                    <div
+                      class="flex flex-col xl:flex-row items-center space-y-3 xl:space-y-0 xl:space-x-16 uppercase py-4"
+                    >
                       <div class="flex flex-col">
                         <div class="space-x-1 text-gray-400 text-sm">
                           <span>avg.</span>
