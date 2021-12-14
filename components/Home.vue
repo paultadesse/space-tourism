@@ -2,14 +2,14 @@
   <div>
     <div>
       <img
-        class="absolute h-screen w-full bg-bottom bg-cover bg-no-repeat"
+        class="absolute min-h-screen w-full bg-bottom bg-cover bg-no-repeat"
         src="images/home/background-home-desktop.jpg"
         alt=""
         srcset=""
       />
       <!-- displayed on mobile devices -->
       <img
-        class="xl:hidden absolute h-screen w-full bg-bottom bg-cover bg-no-repeat"
+        class="xl:hidden absolute min-h-screen w-full bg-bottom bg-cover bg-no-repeat"
         src="images/home/background-home-mobile.jpg"
         alt=""
         srcset=""

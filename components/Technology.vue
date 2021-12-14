@@ -3,7 +3,7 @@
     <div>
       <!-- displayed on large devices -->
       <img
-        class="hidden md:block absolute h-screen w-full bg-bottom bg-cover bg-no-repeat"
+        class="hidden md:block absolute min-h-screen w-full bg-bottom bg-cover bg-no-repeat"
         src="images/technology/background-technology-desktop.jpg"
         alt=""
         srcset=""
@@ -11,7 +11,7 @@
 
       <!-- displayed on mobile devices -->
       <img
-        class="xl:hidden absolute h-screen w-full bg-bottom bg-cover bg-no-repeat"
+        class="xl:hidden absolute min-h-screen w-full bg-bottom bg-cover bg-no-repeat"
         src="images/technology/background-technology-mobile.jpg"
         alt=""
         srcset=""

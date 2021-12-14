@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="absolute w-full">
-      <div class="relative z-10 flex justify-between  xl:pt-20">
+      <div class="relative z-10 flex justify-between xl:items-center  xl:pt-20">
         <div class="p-4  xl:ml-20">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
             <g fill="none" fill-rule="evenodd">
@@ -33,11 +33,11 @@
               :class="
                 !navOpen
                   ? 'hidden'
-                  : 'bg-white text-center xl:px-32 h-screen uppercase bg-opacity-5 text-white backdrop-filter backdrop-blur-xl'
+                  : 'bg-white text-center xl:px-32 min-h-screen uppercase bg-opacity-5 text-white backdrop-filter backdrop-blur-xl'
               "
               @click="navOpen = !navOpen"
             >
-              <div class="absolute h-screen top-7 right-4">
+              <div class="absolute min-h-screen top-7 right-4">
                 <div class="">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
