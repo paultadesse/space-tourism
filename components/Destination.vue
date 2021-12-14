@@ -19,7 +19,7 @@
               ><span class="uppercase">pick your destination</span>
             </div>
             <div class="pt-16">
-              <img src="images/destination/image-mars.png" alt="" srcset="" />
+              <img :src="activeTabData.imagePath" alt="" srcset="" />
             </div>
           </div>
           <div class="mt-6 px-32">
@@ -29,44 +29,32 @@
                   <div
                     class="flex text-center text-gray-400 space-x-8 tracking-widest"
                   >
-                    <div class="py-2">
+                    <div
+                      v-for="(tab, index) in tabs"
+                      :key="index"
+                      :class="
+                        activeTab == index
+                          ? 'border-b-4 border-white py-2'
+                          : 'py-2 hover:border-gray-600 border-transparent border-b-4 hover:border-current'
+                      "
+                      @click="
+                        activeTab = index
+                        activeTabData = tabData[index]
+                      "
+                    >
                       <a href="#">
                         <div class="space-x-1">
-                          <span> moon</span>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="border-b-4 border-white py-2">
-                      <a href="#">
-                        <div class="space-x-1">
-                          <span> mars</span>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="py-2">
-                      <a href="#">
-                        <div class="space-x-1">
-                          <span> europa</span>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="py-2">
-                      <a href="#">
-                        <div class="space-x-1">
-                          <span> Titan</span>
+                          <span> {{ tab }}</span>
                         </div>
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="flex flex-col space-y-7">
-                  <div class="uppercase text-8xl">mars</div>
+                  <div class="uppercase text-8xl">{{ activeTabData.name }}</div>
                   <div class="flex flex-col divide-y space-y-14">
                     <div class="max-w-md text-gray-400">
-                      Don't forget to pack your hiking boots. You'll need them
-                      to tackle Olympus Mons, the tallest planetaryplanetary
-                      mountain in our solar system, It's two and a halt times
-                      the size of Everest!
+                      {{ activeTabData.content }}
                     </div>
                     <div class="flex space-x-16 uppercase py-4">
                       <div class="flex flex-col">
@@ -75,9 +63,7 @@
                           <span>distance</span>
                         </div>
                         <div class="space-x-1 text-2xl">
-                          <span>225</span>
-                          <span>mil.</span>
-                          <span>km</span>
+                          <span>{{ activeTabData.avgDistance }}</span>
                         </div>
                       </div>
                       <div class="flex flex-col">
@@ -87,8 +73,7 @@
                           <span>time</span>
                         </div>
                         <div class="space-x-1 text-2xl">
-                          <span>9</span>
-                          <span>months</span>
+                          <span>{{ activeTabData.estTraveltime }}</span>
                         </div>
                       </div>
                     </div>
@@ -105,6 +90,59 @@
   </div>
 </template>
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      activeTab: 1,
+      activeTabData: [],
+      tabs: ['moon', 'mars', 'europa', 'titan'],
+      tabData: [],
+    }
+  },
+  created() {
+    this.tabData.push(
+      {
+        name: 'moon',
+        content:
+          'See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.',
+        avgDistance: '384,400 KM',
+        estTraveltime: '3 days',
+        imagePath: 'images/destination/image-moon.png',
+      },
+      {
+        name: 'mars',
+        content:
+          "Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetaryplanetary mountain in our solar system, It's two and a halt times the size of Everest!",
+        avgDistance: '225 MIL. KM',
+        estTraveltime: '9 MONTHS',
+        imagePath: 'images/destination/image-europa.png',
+      },
+      {
+        name: 'europa',
+        content:
+          'The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.',
+        avgDistance: '628 MIL. KM',
+        estTraveltime: '3 years',
+        imagePath: 'images/destination/image-titan.png',
+      },
+      {
+        name: 'titan',
+        content:
+          'The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.',
+        avgDistance: '1.6 BIL. KM',
+        estTraveltime: '7 years',
+        imagePath: 'images/destination/image-mars.png',
+      }
+    )
+
+    this.activeTabData = this.tabData[this.activeTab]
+  },
+
+  methods: {
+    setActiveTab(index) {
+      // this.activetab
+    },
+  },
+}
 </script>
 <style lang=""></style>
