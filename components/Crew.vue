@@ -37,7 +37,7 @@
                           :class="
                             activeDot == index
                               ? 'h-3 w-3 rounded-full bg-white '
-                              : 'h-3 w-3 rounded-full bg-gray-500 hover:bg-gray-700'
+                              : 'h-3 w-3 rounded-full bg-gray-500 hover:bg-gray-700 cursor-pointer'
                           "
                           @click="
                             activeDot = index
