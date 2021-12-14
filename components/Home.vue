@@ -7,6 +7,13 @@
         alt=""
         srcset=""
       />
+      <!-- displayed on mobile devices -->
+      <img
+        class="xl:hidden absolute h-screen w-full bg-bottom bg-cover bg-no-repeat"
+        src="images/home/background-home-mobile.jpg"
+        alt=""
+        srcset=""
+      />
 
       <div class="relative top-40 pt-24 md:pt-32 xl:pt-72">
         <div
