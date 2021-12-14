@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="absolute w-full">
-      <div class="relative z-10 flex justify-between pt-20 items-center">
-        <div class="ml-20">
+      <div class="relative z-10 flex justify-between pt-4 xl:pt-20 items-center">
+        <div class="ml-4 xl:ml-20">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
             <g fill="none" fill-rule="evenodd">
               <circle cx="24" cy="24" r="24" fill="#FFF" />
