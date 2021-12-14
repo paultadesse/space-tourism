@@ -7,57 +7,79 @@
         alt=""
         srcset=""
       />
+
+      <!-- displayed on mobile devices -->
+      <img
+        class="xl:hidden absolute h-screen w-full bg-bottom bg-cover bg-no-repeat"
+        src="images/crew/background-crew-mobile.jpg"
+        alt=""
+        srcset=""
+      />
+
       <!-- destination page content -->
 
-      <div class="relative top-40 pt-10 md:pt-14 xl:pt-20">
+      <div class="relative top-10 xl:top-40 pt-10 md:pt-14 xl:pt-20">
         <div
           class="flex flex-col lg:flex-row text-center lg:text-justify text-white justify-center"
         >
-          <div class=" mt-6 px-32">
+          <div class="mt-6 xl:px-32">
             <div class="uppercase text-2xl space-x-4 tracking-widest">
               <span class="text-gray-400">02</span
               ><span class="uppercase">meet your crew</span>
             </div>
-            <div class="mt-40">
-              <div class="flex flex-col pt-14 space-y-7">
-                <div class="flex flex-col space-y-6">
-                  <div class="uppercase text-4xl text-gray-400">
+            <div class="xl:mt-40">
+              <div
+                class="flex xl:flex-col flex-col-reverse items-center xl:items-start pt-14 xl:space-y-7"
+              >
+                <div class="flex flex-col xl:space-y-6 space-y-2">
+                  <div class="uppercase xl:text-4xl text-2xl text-gray-400">
                     {{ activeDotData.job }}
                   </div>
-                  <div class="uppercase text-6xl">{{ activeDotData.name }}</div>
-                  <div class="flex flex-col space-y-14">
+                  <div class="uppercase xl:text-6xl text-3xl">
+                    {{ activeDotData.name }}
+                  </div>
+                  <div class="flex flex-col space-y-14 pt-7 xl:pt-0">
                     <div class="max-w-md text-gray-400">
                       {{ activeDotData.content }}
                     </div>
-                    <div class="py-4">
-                      <div class="flex space-x-7">
-                        <div
-                          v-for="(dot, index) in dotData"
-                          :key="index"
-                          :class="
-                            activeDot == index
-                              ? 'h-3 w-3 rounded-full bg-white '
-                              : 'h-3 w-3 rounded-full bg-gray-500 hover:bg-gray-700 cursor-pointer'
-                          "
-                          @click="
-                            activeDot = index
-                            activeDotData = dotData[index]
-                          "
-                        ></div>
-                      </div>
-                    </div>
+                  </div>
+                </div>
+                <div class="py-10 xl:py-4">
+                  <div class="flex space-x-7">
+                    <div
+                      v-for="(dot, index) in dotData"
+                      :key="index"
+                      :class="
+                        activeDot == index
+                          ? 'h-3 w-3 rounded-full bg-white '
+                          : 'h-3 w-3 rounded-full bg-gray-500 hover:bg-gray-700 cursor-pointer'
+                      "
+                      @click="
+                        activeDot = index
+                        activeDotData = dotData[index]
+                      "
+                    ></div>
+                  </div>
+                </div>
+                <div class="xl:hidden lg:space-y-4 lg:space-y-7 flex-shrink-0">
+                  <div class="">
+                    <!-- only visible on mobile device -->
+                    <img
+                      class="h-72"
+                      :src="activeDotData.imagePath"
+                      alt=""
+                      srcset=""
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="space-y-2 lg:space-y-4 lg:space-y-7 px-20">
-            <div class="pt-8 ">
-              <img
-                :src="activeDotData.imagePath"
-                alt=""
-                srcset=""
-              />
+          <div
+            class="hidden xl:block space-y-2 lg:space-y-4 lg:space-y-7 px-20"
+          >
+            <div class="pt-8">
+              <img :src="activeDotData.imagePath" alt="" srcset="" />
             </div>
           </div>
         </div>
