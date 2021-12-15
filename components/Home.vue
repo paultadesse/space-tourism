@@ -40,7 +40,7 @@
         </div>
 
         <div class="mt-24 lg:mt-0">
-          <button type="button" class="relative h-48 w-48 uppercase text-2xl xl:text-3xl font-bellefair text-black bg-white rounded-full after:absolute after:inset-0 after:bg-white after:bg-opacity-0 hover:after:bg-opacity-25 after:transform after:scale-100 hover:after:scale-150 after:transition after:rounded-full">Explore</button>
+          <button type="button" class="relative h-48 w-48 uppercase text-2xl xl:text-3xl font-bellefair text-black bg-white rounded-full after:absolute after:inset-0 after:bg-lightGray after:bg-opacity-0 hover:after:bg-opacity-70 after:transform after:scale-100 hover:after:scale-150 after:transition after:rounded-full">Explore</button>
         </div>
       </div>
     </div>

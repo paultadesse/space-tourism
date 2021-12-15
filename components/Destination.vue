@@ -17,18 +17,18 @@
 
       <!-- destination page content -->
 
-      <div class="relative top-24 xl:top-40 md:pt-14 xl:pt-28">
+      <div class="relative pt-24 md:pt-32 xl:pt-72 h-full flex items-center pb-24">
         <div
-          class="flex flex-col xl:flex-row text-center xl:text-justify text-white justify-center"
+          class="w-full lg:flex text-center lg:text-justify text-white justify-center items-center"
         >
-          <div class="space-y-2 xl:space-y-4 xl:space-y-7">
+          <div class="space-y-2  xl:space-y-7">
             <div
               class="uppercase text-lg xl:text-2xl font-BarlowCondensed space-x-2 xl:space-x-4 tracking-widest"
             >
               <span class="text-lightGray font-extrabold">01</span
               ><span class="uppercase">pick your destination</span>
             </div>
-            <div class="flex justify-center pt-4 xl:pt-16 px-28 xl:px-20">
+            <div class="flex justify-center pt-4 xl:pt-16 px-60 ">
               <transition
                 enter-class="transform translate-x-8 opacity-0"
                 enter-to-class="transform translate-x-0 opacity-100"
@@ -38,7 +38,7 @@
                 leave-active-class="transition"
                 mode="out-in"
               >
-                <img :src="activeTabData.imagePath" :key="activeTabData.imagePath" alt="" />
+                <img :key="activeTabData.imagePath" :src="activeTabData.imagePath"  alt="" />
               </transition>
             </div>
           </div>
@@ -52,9 +52,9 @@
                     class="flex text-center justify-center xl:justify-start text-lightBlue space-x-8 tracking-widest"
                   >
                     <button
-                      type="button"
                       v-for="(tab, index) in tabs"
                       :key="index"
+                      type="button"
                       :class="
                         activeTab == index
                           ? 'border-b-4 border-white py-2 text-white'
@@ -65,7 +65,7 @@
                         activeTabData = tabData[index]
                       "
                     >
-                          <span class="xl:text-xl"> {{ tab }}</span>
+                          <span class="xl:text-xl uppercase"> {{ tab }}</span>
                     </button>
                   </div>
                 </div>
