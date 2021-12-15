@@ -76,7 +76,7 @@
                   </div>
                   <div class="flex xl:py-9 font-BarlowCondensed text-lightBlue">
                     <div
-                      class="max-w-md pl-4 pr-4 xl:pl-0 xl:pr-0 xl:p-0 text-xl leading-loose"
+                      class="max-w-md pl-4 pr-4 xl:pl-0 xl:pr-0 xl:p-0 xl:text-xl leading-loose"
                     >
                       {{ activeTechData.content }}
                     </div>

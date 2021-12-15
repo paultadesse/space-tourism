@@ -45,7 +45,7 @@
                   <div
                     class="flex flex-col space-y-14 pl-7 pr-7 xl:pl-0 xl:pr-0 font-BarlowCondensed"
                   >
-                    <div class="max-w-md text-lightBlue text-xl">
+                    <div class="max-w-md text-lightBlue xl:text-xl">
                       {{ activeDotData.content }}
                     </div>
                   </div>

@@ -29,7 +29,7 @@
               space
             </div>
             <div
-              class="max-w-md p-8 xl:p-0 font-BarlowCondensed text-xl text-lightBlue"
+              class="max-w-md p-8 xl:p-0 font-BarlowCondensed xl:text-xl text-lightBlue"
             >
               Let's face it; if you want to go to space, you might as well
               genuinely go to outer space and not hover kind of on the edge of

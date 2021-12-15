@@ -52,7 +52,7 @@
                       "
                     >
                       <a href="#">
-                        <div class="space-x-1 text-xl">
+                        <div class="space-x-1 xl:text-xl">
                           <span> {{ tab }}</span>
                         </div>
                       </a>
@@ -66,7 +66,7 @@
                     {{ activeTabData.name }}
                   </div>
                   <div class="flex flex-col divide-y divide-lightGray divide-opacity-50 xl:space-y-14">
-                    <div class="max-w-md pl-4 pr-4 pb-4 text-lightBlue font-BarlowCondensed text-xl">
+                    <div class="max-w-md pl-4 pr-4 pb-4 text-lightBlue font-BarlowCondensed xl:text-xl">
                       {{ activeTabData.content }}
                     </div>
                     <div
