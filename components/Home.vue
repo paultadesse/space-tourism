@@ -45,7 +45,7 @@
           <NuxtLink to="/destination">
             <button
               type="button"
-              class="relative h-72 w-72 uppercase text-2xl xl:text-3xl font-bellefair text-black bg-white rounded-full after:absolute after:inset-0 after:bg-white after:bg-opacity-0 hover:after:bg-opacity-25 after:transform after:scale-100 hover:after:scale-150 after:transition after:rounded-full"
+              class="relative h-40 w-40 md:h-72 md:w-72 uppercase text-2xl xl:text-3xl font-bellefair text-black bg-white rounded-full after:absolute after:inset-0 after:bg-white after:bg-opacity-0 hover:after:bg-opacity-25 after:transform after:scale-100 hover:after:scale-150 after:transition after:rounded-full"
             >
               Explore
             </button>

@@ -30,7 +30,7 @@
             <span class="text-lightGray font-extrabold">01</span
             ><span class="uppercase">pick your destination</span>
           </div>
-          <div class="flex justify-center pt-4 xl:pt-16  ">
+          <div class="flex justify-center pt-4 xl:pt-16 px-28 xl:px-20 ">
             <transition
               duration="500"
               enter-class="transform -translate-x-96 opacity-0 scale-0"
