@@ -28,8 +28,8 @@
               <span class="text-lightGray font-extrabold">03</span
               ><span class="uppercase">space launch 101</span>
             </div>
-            <div class="xl:hidden lg:space-y-4 lg:space-y-7 flex-shrink-0">
-              <div class="pt-16">
+            <div class="xl:hidden xl:space-y-7 flex-shrink-0">
+              <div class="pt-7">
                 <!-- only visible on mobile device -->
                 <img
                   :src="activeTechData.imagePathLandscape"
@@ -38,7 +38,7 @@
                 />
               </div>
             </div>
-            <div class="xl:mt-20 flex flex-col xl:flex-row pt-14 xl:space-x-20">
+            <div class="xl:mt-20 flex flex-col xl:flex-row pt-7 xl:space-x-20">
               <div
                 class="flex xl:flex-col xl:space-y-7 justify-center space-x-4 xl:space-x-0 font-bellefair"
               >
@@ -64,7 +64,7 @@
               </div>
               <div class="flex flex-col mt-7 xl:space-y-7">
                 <div
-                  class="flex flex-col justify-center items-center xl:items-start xl:space-y-1"
+                  class="flex flex-col space-y-2 justify-center items-center xl:items-start xl:space-y-1"
                 >
                   <div class="uppercase  text-lightBlue text-xl font-BarlowCondensed tracking-widest">
                     the terminology ...
@@ -76,7 +76,7 @@
                   </div>
                   <div class="flex xl:py-9 font-BarlowCondensed text-lightBlue">
                     <div
-                      class="max-w-md p-4 xl:p-0 text-xl leading-loose"
+                      class="max-w-md pl-4 pr-4 xl:pl-0 xl:pr-0 xl:p-0 text-xl leading-loose"
                     >
                       {{ activeTechData.content }}
                     </div>
