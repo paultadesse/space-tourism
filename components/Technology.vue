@@ -21,10 +21,12 @@
 
       <div class="relative top-10 xl:top-40 pt-10 md:pt-14 xl:pt-20">
         <div
-          class="flex flex-col lg:flex-row text-center lg:text-justify text-white justify-end"
+          class="flex flex-col items-center justify-center lg:flex-row text-center lg:text-justify text-white justify-end"
         >
           <div class="mt-6 xl:px-72">
-            <div class="uppercase text-2xl space-x-4 tracking-widest font-BarlowCondensed">
+            <div
+              class="uppercase text-2xl space-x-4 tracking-widest font-BarlowCondensed"
+            >
               <span class="text-lightGray font-extrabold">03</span
               ><span class="uppercase">space launch 101</span>
             </div>
@@ -66,7 +68,9 @@
                 <div
                   class="flex flex-col space-y-2 justify-center items-center xl:items-start xl:space-y-1"
                 >
-                  <div class="uppercase  text-lightBlue text-xl font-BarlowCondensed tracking-widest">
+                  <div
+                    class="uppercase text-lightBlue text-xl font-BarlowCondensed tracking-widest"
+                  >
                     the terminology ...
                   </div>
                   <div

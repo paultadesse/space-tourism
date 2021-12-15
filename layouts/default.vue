@@ -16,7 +16,7 @@
         <div
           class="hidden md:block absolute border-b opacity-40 border-gray-100 w-1/3 left-72"
         ></div>
-        <div class="xl:hidden">
+        <div class="md:hidden">
           <div :class="navOpen ? '' : 'mt-7 mr-4'">
             <div
               :class="navOpen ? 'hidden' : 'block'"

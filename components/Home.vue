@@ -25,7 +25,7 @@
             >
               so, you want to travel to
             </div>
-            <div class="uppercase text-8xl xl:text-9xl font-bellefair">
+            <div class="uppercase text-7xl xl:text-9xl font-bellefair">
               space
             </div>
             <div
