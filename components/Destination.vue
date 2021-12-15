@@ -21,7 +21,7 @@
       class="relative pt-24 md:pt-32 xl:pt-72 h-full flex items-center pb-24"
     >
       <div
-        class="w-full lg:flex text-center lg:text-justify text-white justify-center items-center"
+        class="w-full lg:flex text-center lg:text-justify text-white justify-around items-center"
       >
         <div class="space-y-2 xl:space-y-7">
           <div
@@ -30,7 +30,7 @@
             <span class="text-lightGray font-extrabold">01</span
             ><span class="uppercase">pick your destination</span>
           </div>
-          <div class="flex justify-center pt-4 xl:pt-16 px-60">
+          <div class="flex justify-center pt-4 xl:pt-16  ">
             <transition
               duration="500"
               enter-class="transform -translate-x-96 opacity-0 scale-0"
