@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="absolute w-full">
+    <div class="absolute w-full font-BarlowCondensed">
       <div class="relative z-10 flex justify-between xl:items-center  xl:pt-20">
         <div class="p-4  xl:ml-20">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
@@ -58,25 +58,25 @@
                 class="flex flex-col items-start p-20 xl:space-x-10 xl:space-x-20 pl-7 tracking-wide"
               >
                 <NuxtLink class="py-4 xl:py-8" to="/">
-                  <div class="space-x-1">
+                  <div class="space-x-1 text-xl">
                     <span class="font-bold">00</span>
                     <span> home</span>
                   </div>
                 </NuxtLink>
                 <NuxtLink class="py-4 xl:py-8" to="/destination">
-                  <div class="space-x-1">
+                  <div class="space-x-1 text-xl">
                     <span class="font-bold">01</span>
                     <span> destination</span>
                   </div>
                 </NuxtLink>
                 <NuxtLink class="py-4 xl:py-8" to="/crew">
-                  <div class="space-x-1">
+                  <div class="space-x-1 text-xl">
                     <span class="font-bold">02</span>
                     <span> crew</span>
                   </div>
                 </NuxtLink>
                 <NuxtLink class="py-4 xl:py-8" to="/technology">
-                  <div class="space-x-1">
+                  <div class="space-x-1 text-xl">
                     <span class="font-bold">03</span>
                     <span> technology</span>
                   </div>
@@ -92,25 +92,25 @@
             class="flex text-center pr-20 space-x-10 lg:space-x-20 pl-7 tracking-wide"
           >
             <NuxtLink class="py-8" to="/">
-              <div class="space-x-1">
+              <div class="space-x-1 text-xl">
                 <span class="font-bold">00</span>
                 <span> home</span>
               </div>
             </NuxtLink>
             <NuxtLink class="py-8" to="/destination">
-              <div class="space-x-1">
+              <div class="space-x-1 text-xl">
                 <span class="font-bold">01</span>
                 <span> destination</span>
               </div>
             </NuxtLink>
             <NuxtLink class="py-8" to="/crew">
-              <div class="space-x-1">
+              <div class="space-x-1 text-xl">
                 <span class="font-bold">02</span>
                 <span> crew</span>
               </div>
             </NuxtLink>
             <NuxtLink class="py-8" to="/technology">
-              <div class="space-x-1">
+              <div class="space-x-1 text-xl">
                 <span class="font-bold">03</span>
                 <span> technology</span>
               </div>

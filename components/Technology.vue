@@ -24,8 +24,8 @@
           class="flex flex-col lg:flex-row text-center lg:text-justify text-white justify-end"
         >
           <div class="mt-6 xl:px-72">
-            <div class="uppercase text-2xl space-x-4 tracking-widest">
-              <span class="text-gray-400">03</span
+            <div class="uppercase text-2xl space-x-4 tracking-widest font-BarlowCondensed">
+              <span class="text-lightGray font-extrabold">03</span
               ><span class="uppercase">space launch 101</span>
             </div>
             <div class="xl:hidden lg:space-y-4 lg:space-y-7 flex-shrink-0">
@@ -40,7 +40,7 @@
             </div>
             <div class="xl:mt-20 flex flex-col xl:flex-row pt-14 xl:space-x-20">
               <div
-                class="flex xl:flex-col xl:space-y-7 justify-center space-x-4 xl:space-x-0"
+                class="flex xl:flex-col xl:space-y-7 justify-center space-x-4 xl:space-x-0 font-bellefair"
               >
                 <div
                   v-for="(tech, index) in techData"
@@ -56,7 +56,7 @@
                   "
                 >
                   <div
-                    class="absolute flex xl:top-5 top-3 xl:right-7 right-5 text-2xl xl:text-4xl"
+                    class="absolute flex xl:top-5 top-3 xl:right-8 right-5 text-2xl xl:text-4xl"
                   >
                     {{ index + 1 }}
                   </div>
@@ -66,17 +66,17 @@
                 <div
                   class="flex flex-col justify-center items-center xl:items-start xl:space-y-1"
                 >
-                  <div class="uppercase text-sm text-gray-400 tracking-widest">
+                  <div class="uppercase  text-lightBlue text-xl font-BarlowCondensed tracking-widest">
                     the terminology ...
                   </div>
                   <div
-                    class="flex xl:space-x-2 uppercase xl:text-6xl text-3xl tracking-wider"
+                    class="flex xl:space-x-2 font-bellefair uppercase xl:text-6xl text-3xl tracking-wider"
                   >
                     <span>{{ activeTechData.name }}</span>
                   </div>
-                  <div class="flex xl:py-9">
+                  <div class="flex xl:py-9 font-BarlowCondensed text-lightBlue">
                     <div
-                      class="max-w-md p-4 xl:p-0 text-gray-400 leading-loose"
+                      class="max-w-md p-4 xl:p-0 text-xl leading-loose"
                     >
                       {{ activeTechData.content }}
                     </div>

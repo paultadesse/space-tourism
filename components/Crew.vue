@@ -23,8 +23,8 @@
           class="flex flex-col lg:flex-row text-center lg:text-justify text-white justify-center"
         >
           <div class="mt-6 xl:px-32">
-            <div class="uppercase text-2xl space-x-4 tracking-widest">
-              <span class="text-gray-400">02</span
+            <div class="uppercase text-2xl space-x-4 tracking-widest font-BarlowCondensed">
+              <span class="text-lightGray font-extrabold">02</span
               ><span class="uppercase">meet your crew</span>
             </div>
             <div class="xl:mt-40">
@@ -32,14 +32,14 @@
                 class="flex xl:flex-col flex-col-reverse items-center xl:items-start pt-14 xl:space-y-7"
               >
                 <div class="flex flex-col xl:space-y-6 space-y-2">
-                  <div class="uppercase xl:text-4xl text-2xl text-gray-400">
+                  <div class="uppercase xl:text-4xl text-2xl text-gray-400 font-bellefair">
                     {{ activeDotData.job }}
                   </div>
-                  <div class="uppercase xl:text-6xl text-3xl">
+                  <div class="uppercase xl:text-6xl text-3xl font-bellefair">
                     {{ activeDotData.name }}
                   </div>
-                  <div class="flex flex-col space-y-14 pt-7 xl:pt-0">
-                    <div class="max-w-md text-gray-400">
+                  <div class="flex flex-col space-y-14 pt-7 xl:pt-0 font-BarlowCondensed">
+                    <div class="max-w-md text-lightBlue text-xl">
                       {{ activeDotData.content }}
                     </div>
                   </div>

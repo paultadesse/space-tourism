@@ -11,11 +11,16 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        lightBlue: '#D0D6F9',
+        lightGray: '#616476',
+      },
+    },
     fontFamily: {
       inter: ['Inter'],
       bellefair: ['Bellefair'],
-      BarlowCondensed: ['Barlow Condensed']
+      BarlowCondensed: ['Barlow Condensed'],
     },
   },
   variants: {

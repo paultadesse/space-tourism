@@ -23,8 +23,8 @@
           class="flex flex-col xl:flex-row text-center xl:text-justify text-white justify-center"
         >
           <div class="space-y-2 xl:space-y-4 xl:space-y-7 px-20">
-            <div class="uppercase xl:text-2xl xl:space-x-4 tracking-widest">
-              <span class="text-gray-400">01</span
+            <div class="uppercase xl:text-2xl font-BarlowCondensed xl:space-x-4 tracking-widest">
+              <span class="text-lightGray font-extrabold">01</span
               ><span class="uppercase">pick your destination</span>
             </div>
             <div class="pt-4 xl:pt-16">
@@ -34,16 +34,16 @@
           <div class="mt-6 xl:px-32">
             <div class="">
               <div class="flex flex-col xl:pt-14 space-y-7">
-                <div class="text-center uppercase text-white">
+                <div class="text-center uppercase text-white font-BarlowCondensed">
                   <div
-                    class="flex text-center justify-center xl:justify-start text-gray-400 space-x-8 tracking-widest"
+                    class="flex text-center justify-center xl:justify-start text-lightBlue space-x-8 tracking-widest"
                   >
                     <div
                       v-for="(tab, index) in tabs"
                       :key="index"
                       :class="
                         activeTab == index
-                          ? 'border-b-4 border-white py-2'
+                          ? 'border-b-4 border-white py-2 text-white'
                           : 'py-2 hover:border-gray-600 border-transparent border-b-4 hover:border-current'
                       "
                       @click="
@@ -52,7 +52,7 @@
                       "
                     >
                       <a href="#">
-                        <div class="space-x-1">
+                        <div class="space-x-1 text-xl">
                           <span> {{ tab }}</span>
                         </div>
                       </a>
@@ -62,32 +62,32 @@
                 <div
                   class="flex flex-col items-center xl:items-start space-y-3 xl:space-y-7"
                 >
-                  <div class="uppercase text-4xl xl:text-8xl">
+                  <div class="uppercase text-4xl xl:text-8xl font-bellefair">
                     {{ activeTabData.name }}
                   </div>
-                  <div class="flex flex-col divide-y xl:space-y-14">
-                    <div class="max-w-md p-4 text-gray-400">
+                  <div class="flex flex-col divide-y divide-lightGray divide-opacity-50 xl:space-y-14">
+                    <div class="max-w-md p-4 text-lightBlue font-BarlowCondensed text-xl">
                       {{ activeTabData.content }}
                     </div>
                     <div
                       class="flex flex-col xl:flex-row items-center space-y-3 xl:space-y-0 xl:space-x-16 uppercase py-4"
                     >
                       <div class="flex flex-col">
-                        <div class="space-x-1 text-gray-400 text-sm">
+                        <div class="space-x-1 text-lightBlue text-lg font-BarlowCondensed">
                           <span>avg.</span>
                           <span>distance</span>
                         </div>
-                        <div class="space-x-1 text-2xl">
+                        <div class="space-x-1 text-2xl font-bellefair">
                           <span>{{ activeTabData.avgDistance }}</span>
                         </div>
                       </div>
                       <div class="flex flex-col">
-                        <div class="space-x-1 text-gray-400 text-sm">
+                        <div class="space-x-1 text-lightBlue text-lg font-BarlowCondensed">
                           <span>est.</span>
                           <span>travel</span>
                           <span>time</span>
                         </div>
-                        <div class="space-x-1 text-2xl">
+                        <div class="space-x-1 text-2xl font-bellefair">
                           <span>{{ activeTabData.estTraveltime }}</span>
                         </div>
                       </div>
