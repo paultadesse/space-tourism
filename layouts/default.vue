@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="absolute w-full font-BarlowCondensed">
-      <div class="relative z-10 flex justify-between xl:items-center  xl:pt-20">
-        <div class="p-4  xl:ml-20">
+      <div class="relative z-10 flex justify-between xl:items-center  xl:pt-10">
+        <div class="p-4  xl:ml-10">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
             <g fill="none" fill-rule="evenodd">
               <circle cx="24" cy="24" r="24" fill="#FFF" />
@@ -14,7 +14,7 @@
           </svg>
         </div>
         <div
-          class="hidden md:block absolute border-b opacity-40 border-gray-100 w-1/3 left-72"
+          class="hidden md:block absolute border-b opacity-40 border-gray-100 w-1/2 left-52"
         ></div>
         <div class="md:hidden">
           <div :class="navOpen ? '' : 'mt-7 mr-4'">

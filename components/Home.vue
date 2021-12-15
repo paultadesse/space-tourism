@@ -1,6 +1,6 @@
 <template>
   <!-- style="background-image: url('images/home/background-home-desktop.jpg');" -->
-  <div  class="min-h-screen h-0 overflow-hidden">
+  <div class="min-h-screen h-0 overflow-hidden">
     <img
       class="hidden md:block absolute w-full h-full object-bottom object-cover"
       src="images/home/background-home-desktop.jpg"
@@ -16,7 +16,9 @@
       srcset=""
     />
 
-    <div class="relative pt-24 md:pt-32 xl:pt-72 h-full flex items-center pb-24">
+    <div
+      class="relative pt-24 md:pt-32 xl:pt-72 h-full flex items-center pb-24"
+    >
       <div
         class="w-full lg:flex text-center lg:text-justify text-white justify-around items-center"
       >
@@ -33,14 +35,21 @@
             class="text-center lg:text-left max-w-md mx-auto px-8 sm:px-0 font-BarlowCondensed xl:text-xl text-lightBlue"
           >
             Let's face it; if you want to go to space, you might as well
-            genuinely go to outer space and not hover kind of on the edge of
-            it. Well sit back, and relax because we'll give you a truly out of
-            this world experience!
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we'll give you a truly out of this
+            world experience!
           </div>
         </div>
 
         <div class="mt-24 lg:mt-0">
-          <button type="button" class="relative h-48 w-48 uppercase text-2xl xl:text-3xl font-bellefair text-black bg-white rounded-full after:absolute after:inset-0 after:bg-lightGray after:bg-opacity-0 hover:after:bg-opacity-70 after:transform after:scale-100 hover:after:scale-150 after:transition after:rounded-full">Explore</button>
+          <NuxtLink to="/destination">
+            <button
+              type="button"
+              class="relative h-72 w-72 uppercase text-2xl xl:text-3xl font-bellefair text-black bg-white rounded-full after:absolute after:inset-0 after:bg-white after:bg-opacity-0 hover:after:bg-opacity-25 after:transform after:scale-100 hover:after:scale-150 after:transition after:rounded-full"
+            >
+              Explore
+            </button>
+          </NuxtLink>
         </div>
       </div>
     </div>
