@@ -1,125 +1,132 @@
 <template lang="">
-    <div  class="min-h-screen h-0 overflow-hidden">
-      <img
-        class="hidden md:block absolute w-full h-full object-bottom object-cover"
-        src="images/destination/background-destination-desktop.jpg"
-        alt=""
-        srcset=""
-      />
+  <div class="min-h-screen h-0 overflow-hidden">
+    <img
+      class="hidden md:block absolute w-full h-full object-bottom object-cover"
+      src="images/destination/background-destination-desktop.jpg"
+      alt=""
+      srcset=""
+    />
 
-      <!-- displayed on mobile devices -->
-      <img
-        class="md:hidden absolute w-full h-full object-bottom object-cover"
-        src="images/destination/background-destination-mobile.jpg"
-        alt=""
-        srcset=""
-      />
+    <!-- displayed on mobile devices -->
+    <img
+      class="md:hidden absolute w-full h-full object-bottom object-cover"
+      src="images/destination/background-destination-mobile.jpg"
+      alt=""
+      srcset=""
+    />
 
-      <!-- destination page content -->
+    <!-- destination page content -->
 
-      <div class="relative pt-24 md:pt-32 xl:pt-72 h-full flex items-center pb-24">
-        <div
-          class="w-full lg:flex text-center lg:text-justify text-white justify-center items-center"
-        >
-          <div class="space-y-2  xl:space-y-7">
-            <div
-              class="max-w-lg mx-auto uppercase text-lg xl:text-2xl font-BarlowCondensed space-x-2 xl:space-x-4 tracking-widest"
-            >
-              <span class="text-lightGray font-extrabold">01</span
-              ><span class="uppercase">pick your destination</span>
-            </div>
-            <div class="flex justify-center pt-4 xl:pt-16 px-60 ">
-              <transition
-                enter-class="transform translate-x-8 opacity-0"
-                enter-to-class="transform translate-x-0 opacity-100"
-                leave-class="transform translate-x-0 opacity-100"
-                leave-to-class="transform -translate-x-8 opacity-0"
-                enter-active-class="transition"
-                leave-active-class="transition"
-                mode="out-in"
-              >
-                <img :key="activeTabData.imagePath" :src="activeTabData.imagePath"  alt="" />
-              </transition>
-            </div>
+    <div
+      class="relative pt-24 md:pt-32 xl:pt-72 h-full flex items-center pb-24"
+    >
+      <div
+        class="w-full lg:flex text-center lg:text-justify text-white justify-center items-center"
+      >
+        <div class="space-y-2 xl:space-y-7">
+          <div
+            class="max-w-lg mx-auto uppercase text-lg xl:text-2xl font-BarlowCondensed space-x-2 xl:space-x-4 tracking-widest"
+          >
+            <span class="text-lightGray font-extrabold">01</span
+            ><span class="uppercase">pick your destination</span>
           </div>
-          <div class="mt-6 xl:px-32">
-            <div class="">
-              <div class="flex flex-col xl:pt-14 space-y-7">
+          <div class="flex justify-center pt-4 xl:pt-16 px-60">
+            <transition
+              duration="500"
+              enter-class="transform -translate-x-96 opacity-0 scale-0"
+              enter-to-class="transform translate-x-0 opacity-90 scale-100"
+              leave-class="transform translate-x-0 opacity-100"
+              leave-to-class="transform translate-x-96 opacity-0"
+              enter-active-class="transition"
+              leave-active-class="transition"
+              mode="out-in"
+            >
+              <img
+                :key="activeTabData.imagePath"
+                :src="activeTabData.imagePath"
+                alt=""
+              />
+            </transition>
+          </div>
+        </div>
+        <div class="mt-6 xl:px-32">
+          <div class="">
+            <div class="flex flex-col xl:pt-14 space-y-7">
+              <div
+                class="text-center uppercase text-white font-BarlowCondensed"
+              >
                 <div
-                  class="text-center uppercase text-white font-BarlowCondensed"
+                  class="flex text-center justify-center xl:justify-start text-lightBlue space-x-8 tracking-widest"
                 >
-                  <div
-                    class="flex text-center justify-center xl:justify-start text-lightBlue space-x-8 tracking-widest"
+                  <button
+                    v-for="(tab, index) in tabs"
+                    :key="index"
+                    type="button"
+                    :class="
+                      activeTab == index
+                        ? 'border-b-4 border-white py-2 text-white'
+                        : 'py-2 hover:border-gray-600 border-transparent border-b-4 hover:border-current'
+                    "
+                    @click="
+                      activeTab = index
+                      activeTabData = tabData[index]
+                    "
                   >
-                    <button
-                      v-for="(tab, index) in tabs"
-                      :key="index"
-                      type="button"
-                      :class="
-                        activeTab == index
-                          ? 'border-b-4 border-white py-2 text-white'
-                          : 'py-2 hover:border-gray-600 border-transparent border-b-4 hover:border-current'
-                      "
-                      @click="
-                        activeTab = index
-                        activeTabData = tabData[index]
-                      "
-                    >
-                          <span class="xl:text-xl uppercase"> {{ tab }}</span>
-                    </button>
-                  </div>
+                    <span class="xl:text-xl uppercase"> {{ tab }}</span>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-center xl:items-start xl:space-y-7"
+              >
+                <div class="uppercase text-5xl xl:text-8xl font-bellefair">
+                  {{ activeTabData.name }}
                 </div>
                 <div
-                  class="flex flex-col items-center xl:items-start xl:space-y-7"
+                  class="flex flex-col divide-y divide-lightGray divide-opacity-50 xl:space-y-14"
                 >
-                  <div class="uppercase text-5xl xl:text-8xl font-bellefair">
-                    {{ activeTabData.name }}
+                  <div
+                    class="max-w-md pl-4 pr-4 pb-4 text-lightBlue font-BarlowCondensed xl:text-xl"
+                  >
+                    {{ activeTabData.content }}
                   </div>
                   <div
-                    class="flex flex-col divide-y divide-lightGray divide-opacity-50 xl:space-y-14"
+                    class="flex flex-col xl:flex-row items-center space-y-3 xl:space-y-0 xl:space-x-16 uppercase py-4"
                   >
-                    <div
-                      class="max-w-md pl-4 pr-4 pb-4 text-lightBlue font-BarlowCondensed xl:text-xl"
-                    >
-                      {{ activeTabData.content }}
-                    </div>
-                    <div
-                      class="flex flex-col xl:flex-row items-center space-y-3 xl:space-y-0 xl:space-x-16 uppercase py-4"
-                    >
-                      <div class="flex flex-col">
-                        <div
-                          class="space-x-1 text-lightBlue xl:text-lg font-BarlowCondensed"
-                        >
-                          <span>avg.</span>
-                          <span>distance</span>
-                        </div>
-                        <div class="space-x-1 text-2xl font-bellefair">
-                          <span>{{ activeTabData.avgDistance }}</span>
-                        </div>
+                    <div class="flex flex-col">
+                      <div
+                        class="space-x-1 text-lightBlue xl:text-lg font-BarlowCondensed"
+                      >
+                        <span>avg.</span>
+                        <span>distance</span>
                       </div>
-                      <div class="flex flex-col">
-                        <div
-                          class="space-x-1 text-lightBlue xl:text-lg font-BarlowCondensed"
-                        >
-                          <span>est.</span>
-                          <span>travel</span>
-                          <span>time</span>
-                        </div>
-                        <div class="space-x-1 text-2xl font-bellefair">
-                          <span>{{ activeTabData.estTraveltime }}</span>
-                        </div>
+                      <div class="space-x-1 text-2xl font-bellefair">
+                        <span>{{ activeTabData.avgDistance }}</span>
+                      </div>
+                    </div>
+                    <div class="flex flex-col">
+                      <div
+                        class="space-x-1 text-lightBlue xl:text-lg font-BarlowCondensed"
+                      >
+                        <span>est.</span>
+                        <span>travel</span>
+                        <span>time</span>
+                      </div>
+                      <div class="space-x-1 text-2xl font-bellefair">
+                        <span>{{ activeTabData.estTraveltime }}</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- ==== -->
           </div>
+
+          <!-- ==== -->
         </div>
       </div>
     </div>
+  </div>
 </template>
 <script>
 export default {
