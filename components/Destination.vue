@@ -23,7 +23,7 @@
         >
           <div class="space-y-2  xl:space-y-7">
             <div
-              class="uppercase text-lg xl:text-2xl font-BarlowCondensed space-x-2 xl:space-x-4 tracking-widest"
+              class="max-w-lg mx-auto uppercase text-lg xl:text-2xl font-BarlowCondensed space-x-2 xl:space-x-4 tracking-widest"
             >
               <span class="text-lightGray font-extrabold">01</span
               ><span class="uppercase">pick your destination</span>
