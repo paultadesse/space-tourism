@@ -22,12 +22,12 @@
         <div
           class="flex flex-col xl:flex-row text-center xl:text-justify text-white justify-center"
         >
-          <div class="space-y-2 xl:space-y-4 xl:space-y-7 px-20">
-            <div class="uppercase xl:text-2xl font-BarlowCondensed xl:space-x-4 tracking-widest">
+          <div class="space-y-2 xl:space-y-4 xl:space-y-7 ">
+            <div class="uppercase text-lg xl:text-2xl font-BarlowCondensed space-x-2 xl:space-x-4 tracking-widest">
               <span class="text-lightGray font-extrabold">01</span
               ><span class="uppercase">pick your destination</span>
             </div>
-            <div class="pt-4 xl:pt-16">
+            <div class="pt-4 xl:pt-16 px-28 xl:px-20">
               <img :src="activeTabData.imagePath" alt="" srcset="" />
             </div>
           </div>
@@ -60,20 +60,20 @@
                   </div>
                 </div>
                 <div
-                  class="flex flex-col items-center xl:items-start space-y-3 xl:space-y-7"
+                  class="flex flex-col items-center xl:items-start  xl:space-y-7"
                 >
-                  <div class="uppercase text-4xl xl:text-8xl font-bellefair">
+                  <div class="uppercase text-7xl xl:text-8xl font-bellefair">
                     {{ activeTabData.name }}
                   </div>
                   <div class="flex flex-col divide-y divide-lightGray divide-opacity-50 xl:space-y-14">
-                    <div class="max-w-md p-4 text-lightBlue font-BarlowCondensed text-xl">
+                    <div class="max-w-md pl-4 pr-4 pb-4 text-lightBlue font-BarlowCondensed text-xl">
                       {{ activeTabData.content }}
                     </div>
                     <div
                       class="flex flex-col xl:flex-row items-center space-y-3 xl:space-y-0 xl:space-x-16 uppercase py-4"
                     >
                       <div class="flex flex-col">
-                        <div class="space-x-1 text-lightBlue text-lg font-BarlowCondensed">
+                        <div class="space-x-1 text-lightBlue xl:text-lg font-BarlowCondensed">
                           <span>avg.</span>
                           <span>distance</span>
                         </div>
@@ -82,7 +82,7 @@
                         </div>
                       </div>
                       <div class="flex flex-col">
-                        <div class="space-x-1 text-lightBlue text-lg font-BarlowCondensed">
+                        <div class="space-x-1 text-lightBlue xl:text-lg font-BarlowCondensed">
                           <span>est.</span>
                           <span>travel</span>
                           <span>time</span>
