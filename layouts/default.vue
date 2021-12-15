@@ -55,7 +55,7 @@
               </div>
 
               <div
-                class="flex flex-col items-start p-20 xl:space-x-10 xl:space-x-20 pl-7 tracking-wide"
+                class="flex flex-col items-start p-20 xl:space-x-20 pl-7 tracking-wide"
               >
                 <NuxtLink class="py-4 xl:py-8" to="/">
                   <div class="space-x-1 text-xl">

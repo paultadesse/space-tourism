@@ -110,7 +110,7 @@
             </div>
           </div>
         </div>
-        <div class="hidden xl:block lg:space-y-4 lg:space-y-7 flex-shrink-0">
+        <div class="hidden xl:block lg:space-y-7 flex-shrink-0">
           <div class="pt-16">
             <transition
               enter-class="transform translate-x-8 opacity-0"

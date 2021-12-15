@@ -21,7 +21,7 @@
       class="relative pt-24 md:pt-32 xl:pt-72 h-full flex items-center pb-24"
     >
       <div
-        class="w-full lg:flex text-center lg:text-justify text-white justify-around items-center"
+        class="w-full lg:flex text-center lg:text-justify text-white justify-evenly items-center"
       >
         <div class="space-y-2 xl:space-y-7">
           <div

@@ -82,7 +82,7 @@
             </div>
           </div>
         </div>
-        <div class="hidden xl:block space-y-2 lg:space-y-4 lg:space-y-7 px-20">
+        <div class="hidden xl:block space-y-2 lg:space-y-7 px-20">
           <div class="pt-8">
             <transition
               enter-class="transform translate-x-8 opacity-0"
