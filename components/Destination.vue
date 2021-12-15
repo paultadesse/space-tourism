@@ -1,8 +1,7 @@
 <template lang="">
-  <div>
-    <div>
+    <div  class="min-h-screen h-0 overflow-hidden">
       <img
-        class="absolute min-h-screen w-full bg-bottom bg-cover bg-no-repeat"
+        class="hidden md:block absolute w-full h-full object-bottom object-cover"
         src="images/destination/background-destination-desktop.jpg"
         alt=""
         srcset=""
@@ -10,7 +9,7 @@
 
       <!-- displayed on mobile devices -->
       <img
-        class="xl:hidden absolute min-h-screen w-full bg-bottom bg-cover bg-no-repeat"
+        class="md:hidden absolute w-full h-full object-bottom object-cover"
         src="images/destination/background-destination-mobile.jpg"
         alt=""
         srcset=""
@@ -30,7 +29,17 @@
               ><span class="uppercase">pick your destination</span>
             </div>
             <div class="flex justify-center pt-4 xl:pt-16 px-28 xl:px-20">
-              <img :src="activeTabData.imagePath" alt="" srcset="" />
+              <transition
+                enter-class="transform translate-x-8 opacity-0"
+                enter-to-class="transform translate-x-0 opacity-100"
+                leave-class="transform translate-x-0 opacity-100"
+                leave-to-class="transform -translate-x-8 opacity-0"
+                enter-active-class="transition"
+                leave-active-class="transition"
+                mode="out-in"
+              >
+                <img :src="activeTabData.imagePath" :key="activeTabData.imagePath" alt="" />
+              </transition>
             </div>
           </div>
           <div class="mt-6 xl:px-32">
@@ -42,7 +51,8 @@
                   <div
                     class="flex text-center justify-center xl:justify-start text-lightBlue space-x-8 tracking-widest"
                   >
-                    <div
+                    <button
+                      type="button"
                       v-for="(tab, index) in tabs"
                       :key="index"
                       :class="
@@ -55,12 +65,8 @@
                         activeTabData = tabData[index]
                       "
                     >
-                      <a href="#">
-                        <div class="space-x-1 xl:text-xl">
-                          <span> {{ tab }}</span>
-                        </div>
-                      </a>
-                    </div>
+                          <span class="xl:text-xl"> {{ tab }}</span>
+                    </button>
                   </div>
                 </div>
                 <div
@@ -114,7 +120,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 <script>
 export default {

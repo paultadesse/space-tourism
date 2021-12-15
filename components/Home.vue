@@ -1,52 +1,46 @@
-<template lang="">
-  <div>
-    <div>
-      <img
-        class="absolute min-h-screen w-full bg-bottom bg-cover bg-no-repeat"
-        src="images/home/background-home-desktop.jpg"
-        alt=""
-        srcset=""
-      />
-      <!-- displayed on mobile devices -->
-      <img
-        class="xl:hidden absolute min-h-screen w-full bg-bottom bg-cover bg-no-repeat"
-        src="images/home/background-home-mobile.jpg"
-        alt=""
-        srcset=""
-      />
+<template>
+  <!-- style="background-image: url('images/home/background-home-desktop.jpg');" -->
+  <div  class="min-h-screen h-0 overflow-hidden">
+    <img
+      class="hidden md:block absolute w-full h-full object-bottom object-cover"
+      src="images/home/background-home-desktop.jpg"
+      alt=""
+      srcset=""
+    />
 
-      <div class="relative top-10 xl:top-40 pt-24 md:pt-32 xl:pt-72">
-        <div
-          class="flex flex-col lg:flex-row text-center lg:text-justify text-white justify-around items-center"
-        >
-          <div class="space-y-7">
-            <div
-              class="uppercase text-xl xl:text-2xl tracking-widest font-BarlowCondensed text-lightBlue"
-            >
-              so, you want to travel to
-            </div>
-            <div class="uppercase text-7xl xl:text-9xl font-bellefair">
-              space
-            </div>
-            <div
-              class="max-w-md p-8 xl:p-0 font-BarlowCondensed xl:text-xl text-lightBlue"
-            >
-              Let's face it; if you want to go to space, you might as well
-              genuinely go to outer space and not hover kind of on the edge of
-              it. Well sit back, and relax because we'll give you a truly out of
-              this world experience!
-            </div>
-          </div>
+    <!-- displayed on mobile devices -->
+    <img
+      class="md:hidden absolute w-full h-full object-bottom object-cover"
+      src="images/home/background-home-mobile.jpg"
+      alt=""
+      srcset=""
+    />
 
-          <div class="mt-20">
-            <div class="xl:p-16 bg-lightGray bg-opacity-0 hover:bg-opacity-70 hover:cursor-pointer rounded-full">
-              <div
-                class="uppercase text-2xl xl:text-3xl font-bellefair text-black bg-white px-8 py-16 lg:px-12 lg:py-24 rounded-full"
-              >
-                Explore
-              </div>
-            </div>
+    <div class="relative pt-24 md:pt-32 xl:pt-72 h-full flex items-center pb-24">
+      <div
+        class="w-full lg:flex text-center lg:text-justify text-white justify-around items-center"
+      >
+        <div class="space-y-7">
+          <div
+            class="uppercase text-xl xl:text-2xl tracking-widest font-BarlowCondensed text-lightBlue"
+          >
+            so, you want to travel to
           </div>
+          <div class="xl:-ml-2 uppercase text-7xl xl:text-9xl font-bellefair">
+            space
+          </div>
+          <div
+            class="text-center lg:text-left max-w-md mx-auto px-8 sm:px-0 font-BarlowCondensed xl:text-xl text-lightBlue"
+          >
+            Let's face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of
+            it. Well sit back, and relax because we'll give you a truly out of
+            this world experience!
+          </div>
+        </div>
+
+        <div class="mt-24 lg:mt-0">
+          <button type="button" class="relative h-48 w-48 uppercase text-2xl xl:text-3xl font-bellefair text-black bg-white rounded-full after:absolute after:inset-0 after:bg-white after:bg-opacity-0 hover:after:bg-opacity-25 after:transform after:scale-100 hover:after:scale-150 after:transition after:rounded-full">Explore</button>
         </div>
       </div>
     </div>

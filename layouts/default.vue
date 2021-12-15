@@ -120,9 +120,9 @@
       </div>
     </div>
 
-    <div class="">
+    <main>
       <Nuxt />
-    </div>
+    </main>
   </div>
 </template>
 
