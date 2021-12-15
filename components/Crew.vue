@@ -23,22 +23,28 @@
           class="flex flex-col lg:flex-row text-center lg:text-justify text-white justify-center"
         >
           <div class="mt-6 xl:px-32">
-            <div class="uppercase text-2xl space-x-4 tracking-widest font-BarlowCondensed">
+            <div
+              class="uppercase text-2xl space-x-4 tracking-widest font-BarlowCondensed"
+            >
               <span class="text-lightGray font-extrabold">02</span
               ><span class="uppercase">meet your crew</span>
             </div>
             <div class="xl:mt-40">
               <div
-                class="flex xl:flex-col flex-col-reverse items-center xl:items-start pt-14 xl:space-y-7"
+                class="flex xl:flex-col flex-col-reverse items-center xl:items-start pt-8 xl:pt-14 xl:space-y-7"
               >
                 <div class="flex flex-col xl:space-y-6 space-y-2">
-                  <div class="uppercase xl:text-4xl text-2xl text-gray-400 font-bellefair">
+                  <div
+                    class="uppercase xl:text-4xl text-xl text-gray-400 font-bellefair"
+                  >
                     {{ activeDotData.job }}
                   </div>
                   <div class="uppercase xl:text-6xl text-3xl font-bellefair">
                     {{ activeDotData.name }}
                   </div>
-                  <div class="flex flex-col space-y-14 pt-7 xl:pt-0 font-BarlowCondensed">
+                  <div
+                    class="flex flex-col space-y-14 pl-7 pr-7 xl:pl-0 xl:pr-0 font-BarlowCondensed"
+                  >
                     <div class="max-w-md text-lightBlue text-xl">
                       {{ activeDotData.content }}
                     </div>
@@ -61,11 +67,11 @@
                     ></div>
                   </div>
                 </div>
-                <div class="xl:hidden lg:space-y-4 lg:space-y-7 flex-shrink-0">
+                <div class="xl:hidden  xl:space-y-7 flex-shrink-0">
                   <div class="">
                     <!-- only visible on mobile device -->
                     <img
-                      class="h-72"
+                      class="h-60"
                       :src="activeDotData.imagePath"
                       alt=""
                       srcset=""
