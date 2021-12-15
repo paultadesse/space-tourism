@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="min-h-screen h-0 overflow-hidden">
+  <div class="min-h-screen h-0 overflow-hidden bg-black">
     <!-- displayed on large devices -->
     <img
       class="hidden md:block absolute w-full h-full object-bottom object-cover"

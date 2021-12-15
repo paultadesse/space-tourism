@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="min-h-screen h-0 overflow-hidden">
+  <div class="min-h-screen h-0 overflow-hidden bg-black">
     <img
       class="hidden md:block absolute w-full h-full object-bottom object-cover"
       src="images/crew/background-crew-desktop.jpg"

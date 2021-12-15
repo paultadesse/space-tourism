@@ -1,6 +1,6 @@
 <template>
   <!-- style="background-image: url('images/home/background-home-desktop.jpg');" -->
-  <div class="min-h-screen h-0 overflow-hidden">
+  <div class="min-h-screen h-0 overflow-hidden bg-black">
     <img
       class="hidden md:block absolute w-full h-full object-bottom object-cover"
       src="images/home/background-home-desktop.jpg"
